@@ -1,0 +1,12 @@
+PODS:
+  - BaiduMapKit (3.3.1)
+
+DEPENDENCIES:
+  - BaiduMapKit
+
+SPEC CHECKSUMS:
+  BaiduMapKit: 9e8ff80bbcfb8f96b4a58b2844d728590dac90ca
+
+PODFILE CHECKSUM: c6057ec00e6f658f7e65ad008f3bed9e1afd1788
+
+COCOAPODS: 1.2.0

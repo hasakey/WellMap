@@ -1,0 +1,643 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		20730B4C5B029F190CCDCDE8 /* Pods_WellMap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA4A2DC90BFBA3B77EFCF22B /* Pods_WellMap.framework */; };
+		2A5B73A51EFD0FE800F8DCE2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A5B73A41EFD0FE800F8DCE2 /* main.m */; };
+		2A5B73A81EFD0FE800F8DCE2 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2A5B73A71EFD0FE800F8DCE2 /* AppDelegate.mm */; };
+		2A5B73AB1EFD0FE800F8DCE2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A5B73AA1EFD0FE800F8DCE2 /* ViewController.m */; };
+		2A5B73AE1EFD0FE800F8DCE2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A5B73AC1EFD0FE800F8DCE2 /* Main.storyboard */; };
+		2A5B73B01EFD0FE800F8DCE2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A5B73AF1EFD0FE800F8DCE2 /* Assets.xcassets */; };
+		2A5B73B31EFD0FE800F8DCE2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A5B73B11EFD0FE800F8DCE2 /* LaunchScreen.storyboard */; };
+		2A5B73BE1EFD0FE800F8DCE2 /* WellMapTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A5B73BD1EFD0FE800F8DCE2 /* WellMapTests.m */; };
+		2A5B73C91EFD0FE800F8DCE2 /* WellMapUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A5B73C81EFD0FE800F8DCE2 /* WellMapUITests.m */; };
+		2A5B73D81EFD126300F8DCE2 /* MapViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2A5B73D71EFD126300F8DCE2 /* MapViewController.mm */; };
+		2A5B73DB1EFD13F800F8DCE2 /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A5B73D91EFD13F800F8DCE2 /* libcrypto.a */; };
+		2A5B73DC1EFD13F800F8DCE2 /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A5B73DA1EFD13F800F8DCE2 /* libssl.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2A5B73BA1EFD0FE800F8DCE2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A5B73981EFD0FE800F8DCE2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2A5B739F1EFD0FE800F8DCE2;
+			remoteInfo = WellMap;
+		};
+		2A5B73C51EFD0FE800F8DCE2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2A5B73981EFD0FE800F8DCE2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2A5B739F1EFD0FE800F8DCE2;
+			remoteInfo = WellMap;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		02FB9E7FA30722A966B2FA67 /* Pods-WellMap.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WellMap.release.xcconfig"; path = "Pods/Target Support Files/Pods-WellMap/Pods-WellMap.release.xcconfig"; sourceTree = "<group>"; };
+		2A5B73A01EFD0FE800F8DCE2 /* WellMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WellMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A5B73A41EFD0FE800F8DCE2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2A5B73A61EFD0FE800F8DCE2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2A5B73A71EFD0FE800F8DCE2 /* AppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
+		2A5B73A91EFD0FE800F8DCE2 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		2A5B73AA1EFD0FE800F8DCE2 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		2A5B73AD1EFD0FE800F8DCE2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2A5B73AF1EFD0FE800F8DCE2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2A5B73B21EFD0FE800F8DCE2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2A5B73B41EFD0FE800F8DCE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2A5B73B91EFD0FE800F8DCE2 /* WellMapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WellMapTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A5B73BD1EFD0FE800F8DCE2 /* WellMapTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WellMapTests.m; sourceTree = "<group>"; };
+		2A5B73BF1EFD0FE800F8DCE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2A5B73C41EFD0FE800F8DCE2 /* WellMapUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WellMapUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A5B73C81EFD0FE800F8DCE2 /* WellMapUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WellMapUITests.m; sourceTree = "<group>"; };
+		2A5B73CA1EFD0FE800F8DCE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2A5B73D61EFD126300F8DCE2 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		2A5B73D71EFD126300F8DCE2 /* MapViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MapViewController.mm; sourceTree = "<group>"; };
+		2A5B73D91EFD13F800F8DCE2 /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcrypto.a; path = Pods/BaiduMapKit/BaiduMapKit/thirdlibs/libcrypto.a; sourceTree = "<group>"; };
+		2A5B73DA1EFD13F800F8DCE2 /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libssl.a; path = Pods/BaiduMapKit/BaiduMapKit/thirdlibs/libssl.a; sourceTree = "<group>"; };
+		87BCF4813B61FF0688B43B7C /* Pods-WellMap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WellMap.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WellMap/Pods-WellMap.debug.xcconfig"; sourceTree = "<group>"; };
+		CA4A2DC90BFBA3B77EFCF22B /* Pods_WellMap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WellMap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2A5B739D1EFD0FE800F8DCE2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A5B73DB1EFD13F800F8DCE2 /* libcrypto.a in Frameworks */,
+				2A5B73DC1EFD13F800F8DCE2 /* libssl.a in Frameworks */,
+				20730B4C5B029F190CCDCDE8 /* Pods_WellMap.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A5B73B61EFD0FE800F8DCE2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A5B73C11EFD0FE800F8DCE2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2A5B73971EFD0FE800F8DCE2 = {
+			isa = PBXGroup;
+			children = (
+				2A5B73A21EFD0FE800F8DCE2 /* WellMap */,
+				2A5B73BC1EFD0FE800F8DCE2 /* WellMapTests */,
+				2A5B73C71EFD0FE800F8DCE2 /* WellMapUITests */,
+				2A5B73A11EFD0FE800F8DCE2 /* Products */,
+				E18752ADC2063DDF4D65344B /* Pods */,
+				69FAE936A68AC8E3E644DE94 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2A5B73A11EFD0FE800F8DCE2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2A5B73A01EFD0FE800F8DCE2 /* WellMap.app */,
+				2A5B73B91EFD0FE800F8DCE2 /* WellMapTests.xctest */,
+				2A5B73C41EFD0FE800F8DCE2 /* WellMapUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2A5B73A21EFD0FE800F8DCE2 /* WellMap */ = {
+			isa = PBXGroup;
+			children = (
+				2A5B73A61EFD0FE800F8DCE2 /* AppDelegate.h */,
+				2A5B73A71EFD0FE800F8DCE2 /* AppDelegate.mm */,
+				2A5B73A91EFD0FE800F8DCE2 /* ViewController.h */,
+				2A5B73AA1EFD0FE800F8DCE2 /* ViewController.m */,
+				2A5B73AC1EFD0FE800F8DCE2 /* Main.storyboard */,
+				2A5B73AF1EFD0FE800F8DCE2 /* Assets.xcassets */,
+				2A5B73B11EFD0FE800F8DCE2 /* LaunchScreen.storyboard */,
+				2A5B73B41EFD0FE800F8DCE2 /* Info.plist */,
+				2A5B73A31EFD0FE800F8DCE2 /* Supporting Files */,
+				2A5B73D61EFD126300F8DCE2 /* MapViewController.h */,
+				2A5B73D71EFD126300F8DCE2 /* MapViewController.mm */,
+			);
+			path = WellMap;
+			sourceTree = "<group>";
+		};
+		2A5B73A31EFD0FE800F8DCE2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2A5B73A41EFD0FE800F8DCE2 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2A5B73BC1EFD0FE800F8DCE2 /* WellMapTests */ = {
+			isa = PBXGroup;
+			children = (
+				2A5B73BD1EFD0FE800F8DCE2 /* WellMapTests.m */,
+				2A5B73BF1EFD0FE800F8DCE2 /* Info.plist */,
+			);
+			path = WellMapTests;
+			sourceTree = "<group>";
+		};
+		2A5B73C71EFD0FE800F8DCE2 /* WellMapUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2A5B73C81EFD0FE800F8DCE2 /* WellMapUITests.m */,
+				2A5B73CA1EFD0FE800F8DCE2 /* Info.plist */,
+			);
+			path = WellMapUITests;
+			sourceTree = "<group>";
+		};
+		69FAE936A68AC8E3E644DE94 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2A5B73D91EFD13F800F8DCE2 /* libcrypto.a */,
+				2A5B73DA1EFD13F800F8DCE2 /* libssl.a */,
+				CA4A2DC90BFBA3B77EFCF22B /* Pods_WellMap.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E18752ADC2063DDF4D65344B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				87BCF4813B61FF0688B43B7C /* Pods-WellMap.debug.xcconfig */,
+				02FB9E7FA30722A966B2FA67 /* Pods-WellMap.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2A5B739F1EFD0FE800F8DCE2 /* WellMap */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2A5B73CD1EFD0FE800F8DCE2 /* Build configuration list for PBXNativeTarget "WellMap" */;
+			buildPhases = (
+				F04E52CD2FE5FC761334B44F /* [CP] Check Pods Manifest.lock */,
+				2A5B739C1EFD0FE800F8DCE2 /* Sources */,
+				2A5B739D1EFD0FE800F8DCE2 /* Frameworks */,
+				2A5B739E1EFD0FE800F8DCE2 /* Resources */,
+				A7F2D1EA4222293F9140ADF1 /* [CP] Embed Pods Frameworks */,
+				EE179896E870CBF3C5802D9A /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WellMap;
+			productName = WellMap;
+			productReference = 2A5B73A01EFD0FE800F8DCE2 /* WellMap.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2A5B73B81EFD0FE800F8DCE2 /* WellMapTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2A5B73D01EFD0FE800F8DCE2 /* Build configuration list for PBXNativeTarget "WellMapTests" */;
+			buildPhases = (
+				2A5B73B51EFD0FE800F8DCE2 /* Sources */,
+				2A5B73B61EFD0FE800F8DCE2 /* Frameworks */,
+				2A5B73B71EFD0FE800F8DCE2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2A5B73BB1EFD0FE800F8DCE2 /* PBXTargetDependency */,
+			);
+			name = WellMapTests;
+			productName = WellMapTests;
+			productReference = 2A5B73B91EFD0FE800F8DCE2 /* WellMapTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2A5B73C31EFD0FE800F8DCE2 /* WellMapUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2A5B73D31EFD0FE800F8DCE2 /* Build configuration list for PBXNativeTarget "WellMapUITests" */;
+			buildPhases = (
+				2A5B73C01EFD0FE800F8DCE2 /* Sources */,
+				2A5B73C11EFD0FE800F8DCE2 /* Frameworks */,
+				2A5B73C21EFD0FE800F8DCE2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2A5B73C61EFD0FE800F8DCE2 /* PBXTargetDependency */,
+			);
+			name = WellMapUITests;
+			productName = WellMapUITests;
+			productReference = 2A5B73C41EFD0FE800F8DCE2 /* WellMapUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2A5B73981EFD0FE800F8DCE2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = well;
+				TargetAttributes = {
+					2A5B739F1EFD0FE800F8DCE2 = {
+						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = ZZKE7H6B25;
+						ProvisioningStyle = Automatic;
+					};
+					2A5B73B81EFD0FE800F8DCE2 = {
+						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = ZZKE7H6B25;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 2A5B739F1EFD0FE800F8DCE2;
+					};
+					2A5B73C31EFD0FE800F8DCE2 = {
+						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = ZZKE7H6B25;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 2A5B739F1EFD0FE800F8DCE2;
+					};
+				};
+			};
+			buildConfigurationList = 2A5B739B1EFD0FE800F8DCE2 /* Build configuration list for PBXProject "WellMap" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2A5B73971EFD0FE800F8DCE2;
+			productRefGroup = 2A5B73A11EFD0FE800F8DCE2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2A5B739F1EFD0FE800F8DCE2 /* WellMap */,
+				2A5B73B81EFD0FE800F8DCE2 /* WellMapTests */,
+				2A5B73C31EFD0FE800F8DCE2 /* WellMapUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2A5B739E1EFD0FE800F8DCE2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A5B73B31EFD0FE800F8DCE2 /* LaunchScreen.storyboard in Resources */,
+				2A5B73B01EFD0FE800F8DCE2 /* Assets.xcassets in Resources */,
+				2A5B73AE1EFD0FE800F8DCE2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A5B73B71EFD0FE800F8DCE2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A5B73C21EFD0FE800F8DCE2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A7F2D1EA4222293F9140ADF1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WellMap/Pods-WellMap-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EE179896E870CBF3C5802D9A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WellMap/Pods-WellMap-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F04E52CD2FE5FC761334B44F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2A5B739C1EFD0FE800F8DCE2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A5B73AB1EFD0FE800F8DCE2 /* ViewController.m in Sources */,
+				2A5B73A81EFD0FE800F8DCE2 /* AppDelegate.mm in Sources */,
+				2A5B73A51EFD0FE800F8DCE2 /* main.m in Sources */,
+				2A5B73D81EFD126300F8DCE2 /* MapViewController.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A5B73B51EFD0FE800F8DCE2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A5B73BE1EFD0FE800F8DCE2 /* WellMapTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A5B73C01EFD0FE800F8DCE2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A5B73C91EFD0FE800F8DCE2 /* WellMapUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2A5B73BB1EFD0FE800F8DCE2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2A5B739F1EFD0FE800F8DCE2 /* WellMap */;
+			targetProxy = 2A5B73BA1EFD0FE800F8DCE2 /* PBXContainerItemProxy */;
+		};
+		2A5B73C61EFD0FE800F8DCE2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2A5B739F1EFD0FE800F8DCE2 /* WellMap */;
+			targetProxy = 2A5B73C51EFD0FE800F8DCE2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2A5B73AC1EFD0FE800F8DCE2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2A5B73AD1EFD0FE800F8DCE2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2A5B73B11EFD0FE800F8DCE2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2A5B73B21EFD0FE800F8DCE2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2A5B73CB1EFD0FE800F8DCE2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		2A5B73CC1EFD0FE800F8DCE2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2A5B73CE1EFD0FE800F8DCE2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 87BCF4813B61FF0688B43B7C /* Pods-WellMap.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = ZZKE7H6B25;
+				INFOPLIST_FILE = WellMap/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/BaiduMapKit/BaiduMapKit/thirdlibs",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.SHTongZhu.EducationPlatform;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2A5B73CF1EFD0FE800F8DCE2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 02FB9E7FA30722A966B2FA67 /* Pods-WellMap.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = ZZKE7H6B25;
+				INFOPLIST_FILE = WellMap/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/BaiduMapKit/BaiduMapKit/thirdlibs",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.SHTongZhu.EducationPlatform;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		2A5B73D11EFD0FE800F8DCE2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = ZZKE7H6B25;
+				INFOPLIST_FILE = WellMapTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = well.WellMapTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WellMap.app/WellMap";
+			};
+			name = Debug;
+		};
+		2A5B73D21EFD0FE800F8DCE2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = ZZKE7H6B25;
+				INFOPLIST_FILE = WellMapTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = well.WellMapTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WellMap.app/WellMap";
+			};
+			name = Release;
+		};
+		2A5B73D41EFD0FE800F8DCE2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = ZZKE7H6B25;
+				INFOPLIST_FILE = WellMapUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = well.WellMapUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = WellMap;
+			};
+			name = Debug;
+		};
+		2A5B73D51EFD0FE800F8DCE2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = ZZKE7H6B25;
+				INFOPLIST_FILE = WellMapUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = well.WellMapUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = WellMap;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2A5B739B1EFD0FE800F8DCE2 /* Build configuration list for PBXProject "WellMap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A5B73CB1EFD0FE800F8DCE2 /* Debug */,
+				2A5B73CC1EFD0FE800F8DCE2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2A5B73CD1EFD0FE800F8DCE2 /* Build configuration list for PBXNativeTarget "WellMap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A5B73CE1EFD0FE800F8DCE2 /* Debug */,
+				2A5B73CF1EFD0FE800F8DCE2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2A5B73D01EFD0FE800F8DCE2 /* Build configuration list for PBXNativeTarget "WellMapTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A5B73D11EFD0FE800F8DCE2 /* Debug */,
+				2A5B73D21EFD0FE800F8DCE2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2A5B73D31EFD0FE800F8DCE2 /* Build configuration list for PBXNativeTarget "WellMapUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A5B73D41EFD0FE800F8DCE2 /* Debug */,
+				2A5B73D51EFD0FE800F8DCE2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2A5B73981EFD0FE800F8DCE2 /* Project object */;
+}
