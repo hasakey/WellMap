@@ -7,136 +7,88 @@
 //
 
 #import "ViewController.h"
-#import <BaiduMapAPI_Map/BMKMapComponent.h>//引入地图功能所有的头文件
-#import <BaiduMapAPI_Location/BMKLocationComponent.h>//引入定位功能所有的头文件
-@interface ViewController ()<BMKMapViewDelegate,BMKLocationServiceDelegate>
-//百度地图
-@property (nonatomic, strong)BMKMapView *mapView;                           //百度地图视图
-@property (nonatomic, strong)BMKLocationService*locService;
-@property (nonatomic, strong)NSTimer *timer;
+#import "LocationViewController.h"
+#import "RouteViewController.h"
+#import "CodingViewController.h"
+
+@interface ViewController ()<UITableViewDataSource,UITableViewDelegate>
+
+@property(nonatomic,strong)UITableView *tableView;
 
 @end
 
 @implementation ViewController
 
 
-
-
-- (void)viewWillAppear:(BOOL)animated
-{
-    [_mapView viewWillAppear];
-    _mapView.delegate = self; // 此处记得不用的时候需要置nil，否则影响内存的释放
-}
-- (void)viewWillDisappear:(BOOL)animated
-{
-    [_mapView viewWillDisappear];
-    _mapView.delegate = nil; // 不用时，置nil
-}
-
--(void)dealloc
-{
-    [self.timer invalidate];
-    if (self.timer) {
-        self.timer = nil;
-    }
-}
-
-#pragma mark ----加载视图
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.view = self.mapView;
-    [self.locService startUserLocationService];  //开启定位
-    //添加定时器
-    self.timer = [NSTimer timerWithTimeInterval:3.0f target:self selector:@selector(startUserLocationService) userInfo:nil repeats:YES];
-    [[NSRunLoop mainRunLoop] addTimer:_timer forMode:NSRunLoopCommonModes];
+    self.view.backgroundColor = [UIColor whiteColor];
+    [self.view addSubview:self.tableView];
 }
 
-#pragma mark ----BMK_LocationDelegate
-/**
- *定位失败后，会调用此函数
- *@param error 错误号
- */
-- (void)didFailToLocateUserWithError:(NSError *)error
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    NSLog(@"地图定位失败======%@",error);
+    return 3;
 }
-//实现相关delegate 处理位置信息更新
-//处理方向变更信息
-- (void)didUpdateUserHeading:(BMKUserLocation *)userLocation
+
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSLog(@"heading = %@",userLocation.heading);
-}
-//处理位置坐标更新
-- (void)didUpdateBMKUserLocation:(BMKUserLocation *)userLocation
-{
-    NSLog(@"didUpdateUserLocation lat %f,long %f",userLocation.location.coordinate.latitude,userLocation.location.coordinate.longitude);
-    //更新一次地图的位置 (只执行一次)
-    if ((userLocation.location.coordinate.latitude != 0 || userLocation.location.coordinate.longitude != 0))
-    {
-        [self.mapView updateLocationData:userLocation];
-        
-        static dispatch_once_t onceToken;
-        dispatch_once(&onceToken, ^{
-            // 设置屏幕中心点
-            BMKCoordinateRegion region;
-            region.center.latitude = userLocation.location.coordinate.latitude;
-            region.center.longitude = userLocation.location.coordinate.longitude;
-            self.mapView.region = region;
-        });
+    static NSString *cellID = @"LOCATION";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellID];
+    if (!cell) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellID];
     }
-    [self.locService stopUserLocationService];//关闭坐标更新
-}
-
-#pragma mark ----BMKMapViewDelegate
-- (BMKAnnotationView *)mapView:(BMKMapView *)mapView viewForAnnotation:(id<BMKAnnotation>)annotation
-{
-    if ([annotation isKindOfClass:[BMKPointAnnotation class]]) {
-        //添加大头针标注
-        BMKPinAnnotationView *newAnnotationView = [[BMKPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:@"myAnnotation"];
-        newAnnotationView.pinColor = BMKPinAnnotationColorPurple;
-        newAnnotationView.animatesDrop = YES;// 设置该标注点动画显示
-        return newAnnotationView;
+    switch (indexPath.row) {
+        case 0:
+            cell.textLabel.text = @"简单定位";
+            break;
+        case 1:
+            cell.textLabel.text = @"反编码";
+            break;
+        case 2:
+            cell.textLabel.text = @"路线规划";
+            break;
+            
+        default:
+            break;
     }
-    return nil;
-}
-
-#pragma mark ----METHODS
--(void)startUserLocationService
-{
-    
-    [self.locService startUserLocationService];  //开启定位
+    return cell;
 }
 
 
-#pragma mark ----懒加载
-//地图
-- (BMKMapView *)mapView
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    if (!_mapView) {
-        _mapView = [[BMKMapView alloc] initWithFrame:self.view.frame];
-        [_mapView setZoomEnabled:YES];
-        [_mapView setZoomLevel:18];//放大级别，3-19
-        _mapView.showMapScaleBar = YES;//比例尺
-        _mapView.mapScaleBarPosition = CGPointMake(10,_mapView.frame.size.height-45);//比例尺的位置
-        _mapView.showsUserLocation=YES;//显示当前设备的位置
-        //        _mapView.userTrackingMode = BMKUserTrackingModeFollow;//定位跟随模式
-        [_mapView setMapType:BMKMapTypeStandard];//地图的样式(标准地图)
+    return 100;
+}
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    switch (indexPath.row) {
+        case 0:
+            [self.navigationController pushViewController:[LocationViewController new] animated:NO];
+            break;
+        case 1:
+            [self.navigationController pushViewController:[CodingViewController new] animated:NO];
+            break;
+        case 2:
+            [self.navigationController pushViewController:[RouteViewController new] animated:NO];
+            break;
+            
+        default:
+            break;
     }
-    return _mapView;
 }
 
-//地图定位
-- (BMKLocationService *)locService
+
+-(UITableView *)tableView
 {
-    if (!_locService)
-    {
-        _locService = [[BMKLocationService alloc] init];
-        _locService.delegate = self;
+    if (!_tableView) {
+        _tableView = [[UITableView alloc] initWithFrame:self.view.frame];
+        _tableView.delegate = self;
+        _tableView.dataSource = self;
     }
-    return _locService;
+    return _tableView;
 }
-
 
 
 

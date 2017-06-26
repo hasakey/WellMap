@@ -19,6 +19,11 @@
 		2A5B73D81EFD126300F8DCE2 /* MapViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2A5B73D71EFD126300F8DCE2 /* MapViewController.mm */; };
 		2A5B73DB1EFD13F800F8DCE2 /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A5B73D91EFD13F800F8DCE2 /* libcrypto.a */; };
 		2A5B73DC1EFD13F800F8DCE2 /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A5B73DA1EFD13F800F8DCE2 /* libssl.a */; };
+		2AA4F30E1F00E6840033BFCA /* BaseMapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AA4F30D1F00E6840033BFCA /* BaseMapView.m */; };
+		2AA4F3111F00E7260033BFCA /* LocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AA4F3101F00E7260033BFCA /* LocationViewController.m */; };
+		2AA4F3141F00EE900033BFCA /* RouteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AA4F3131F00EE900033BFCA /* RouteViewController.m */; };
+		2AA4F31A1F00EEBF0033BFCA /* CodingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AA4F3191F00EEBF0033BFCA /* CodingViewController.m */; };
+		2AA4F31B1F00F3230033BFCA /* libMobileGestalt.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AA4F3091F00E1BE0033BFCA /* libMobileGestalt.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +65,15 @@
 		2A5B73D71EFD126300F8DCE2 /* MapViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MapViewController.mm; sourceTree = "<group>"; };
 		2A5B73D91EFD13F800F8DCE2 /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcrypto.a; path = Pods/BaiduMapKit/BaiduMapKit/thirdlibs/libcrypto.a; sourceTree = "<group>"; };
 		2A5B73DA1EFD13F800F8DCE2 /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libssl.a; path = Pods/BaiduMapKit/BaiduMapKit/thirdlibs/libssl.a; sourceTree = "<group>"; };
+		2AA4F3091F00E1BE0033BFCA /* libMobileGestalt.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libMobileGestalt.tbd; path = usr/lib/libMobileGestalt.tbd; sourceTree = SDKROOT; };
+		2AA4F30C1F00E6840033BFCA /* BaseMapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BaseMapView.h; path = Class/BaseMapView.h; sourceTree = "<group>"; };
+		2AA4F30D1F00E6840033BFCA /* BaseMapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BaseMapView.m; path = Class/BaseMapView.m; sourceTree = "<group>"; };
+		2AA4F30F1F00E7260033BFCA /* LocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LocationViewController.h; path = Class/LocationViewController.h; sourceTree = "<group>"; };
+		2AA4F3101F00E7260033BFCA /* LocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LocationViewController.m; path = Class/LocationViewController.m; sourceTree = "<group>"; };
+		2AA4F3121F00EE900033BFCA /* RouteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RouteViewController.h; path = Class/RouteViewController.h; sourceTree = "<group>"; };
+		2AA4F3131F00EE900033BFCA /* RouteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RouteViewController.m; path = Class/RouteViewController.m; sourceTree = "<group>"; };
+		2AA4F3181F00EEBF0033BFCA /* CodingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CodingViewController.h; path = Class/CodingViewController.h; sourceTree = "<group>"; };
+		2AA4F3191F00EEBF0033BFCA /* CodingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CodingViewController.m; path = Class/CodingViewController.m; sourceTree = "<group>"; };
 		87BCF4813B61FF0688B43B7C /* Pods-WellMap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WellMap.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WellMap/Pods-WellMap.debug.xcconfig"; sourceTree = "<group>"; };
 		CA4A2DC90BFBA3B77EFCF22B /* Pods_WellMap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WellMap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -69,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2AA4F31B1F00F3230033BFCA /* libMobileGestalt.tbd in Frameworks */,
 				2A5B73DB1EFD13F800F8DCE2 /* libcrypto.a in Frameworks */,
 				2A5B73DC1EFD13F800F8DCE2 /* libssl.a in Frameworks */,
 				20730B4C5B029F190CCDCDE8 /* Pods_WellMap.framework in Frameworks */,
@@ -117,6 +132,7 @@
 		2A5B73A21EFD0FE800F8DCE2 /* WellMap */ = {
 			isa = PBXGroup;
 			children = (
+				2AA4F30B1F00E60B0033BFCA /* Class */,
 				2A5B73A61EFD0FE800F8DCE2 /* AppDelegate.h */,
 				2A5B73A71EFD0FE800F8DCE2 /* AppDelegate.mm */,
 				2A5B73A91EFD0FE800F8DCE2 /* ViewController.h */,
@@ -158,9 +174,25 @@
 			path = WellMapUITests;
 			sourceTree = "<group>";
 		};
+		2AA4F30B1F00E60B0033BFCA /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				2AA4F30C1F00E6840033BFCA /* BaseMapView.h */,
+				2AA4F30D1F00E6840033BFCA /* BaseMapView.m */,
+				2AA4F30F1F00E7260033BFCA /* LocationViewController.h */,
+				2AA4F3101F00E7260033BFCA /* LocationViewController.m */,
+				2AA4F3121F00EE900033BFCA /* RouteViewController.h */,
+				2AA4F3131F00EE900033BFCA /* RouteViewController.m */,
+				2AA4F3181F00EEBF0033BFCA /* CodingViewController.h */,
+				2AA4F3191F00EEBF0033BFCA /* CodingViewController.m */,
+			);
+			name = Class;
+			sourceTree = "<group>";
+		};
 		69FAE936A68AC8E3E644DE94 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2AA4F3091F00E1BE0033BFCA /* libMobileGestalt.tbd */,
 				2A5B73D91EFD13F800F8DCE2 /* libcrypto.a */,
 				2A5B73DA1EFD13F800F8DCE2 /* libssl.a */,
 				CA4A2DC90BFBA3B77EFCF22B /* Pods_WellMap.framework */,
@@ -364,9 +396,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2AA4F30E1F00E6840033BFCA /* BaseMapView.m in Sources */,
+				2AA4F3111F00E7260033BFCA /* LocationViewController.m in Sources */,
 				2A5B73AB1EFD0FE800F8DCE2 /* ViewController.m in Sources */,
 				2A5B73A81EFD0FE800F8DCE2 /* AppDelegate.mm in Sources */,
+				2AA4F31A1F00EEBF0033BFCA /* CodingViewController.m in Sources */,
 				2A5B73A51EFD0FE800F8DCE2 /* main.m in Sources */,
+				2AA4F3141F00EE900033BFCA /* RouteViewController.m in Sources */,
 				2A5B73D81EFD126300F8DCE2 /* MapViewController.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
